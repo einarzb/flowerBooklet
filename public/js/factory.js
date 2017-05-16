@@ -53,40 +53,32 @@ var language =
       "hello": "שלום",
       "welcome": "ברוכים הבאים",
       "flower guide": "מדריך פרחים"
-    }
+    },
+		"heSeason": {
+			"summer": "קיץ",
+			"winter": "חורף",
+			"fall": "סתיו",
+			"spring": "אביב"
+		},
+		"heFlower": {
+			"blossom season": "blossom season",
+			"rose": "ורדז",
+			"Calla lily": "לילך",
+			"sunset safari": "לויקודנדרון",
+			"hypericum": "פרע",
+			"orchid Phalaenopsis": "סחלב"
+		}
   }
 }
-
-var heFlowerName = {
-	"blossom season": "blossom season",
-	"rose": "ורדז",
-	"Calla lily": "לילך",
-	"sunset safari": "לויקודנדרון",
-	"hypericum": "פרע",
-	"orchid Phalaenopsis": "סחלב"
-}
-
-console.log(heFlowerName);
-
-var heSeasonName = {
-	"summer": "קיץ",
-	"winter": "חורף",
-	"fall": "סתיו",
-	"spring": "אביב"
-}
-console.log(heSeasonName);
-
 //languages
-var he = language.data.he;
+var heSeason = language.data.heSeason;
+var heFlower = language.data.heFlower;
+console.log(heFlower);
 var en = language.data.en;
 // console.log(he);
 // console.log(en);
 
 	return {
-		flowers:json['data'],
-		// image:image,
-		// season:season,
-		he:he,
-		en:en
+		flowers:json['data']
 	}
 });
