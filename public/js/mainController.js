@@ -12,22 +12,28 @@ return flower["image link"];
 
 }
 
-$scope.he = function(he) {
-  alert("yoyoyoy");
+$scope.getSeason = function(flower){
+  console.log(flower);
+  console.log(flower["best season"]);
+  return flower["best season"];
 }
 
-$scope.en = function(en) {
-  alert("mememe");
-}
+// $scope.he = function(he) {
+//   alert("yoyoyoy");
+// }
+//
+// $scope.en = function(en) {
+//   alert("mememe");
+// }
 
 
-$scope.filterName = function(nameSearch){
-console.log(nameSearch)
-}
-
-$scope.filterSeason = function(seasonSearch) {
-console.log(seasonSearch);
-}
+// $scope.filterName = function(nameSearch){
+// console.log(nameSearch)
+// }
+//
+// $scope.filterSeason = function(seasonSearch) {
+// console.log(seasonSearch);
+// }
 
 
 });

@@ -72,9 +72,12 @@ var language =
 }
 
 	var flowers = [];
-	var image = json.data[1]["image link"];
+	var image = json.data[0]["image link"];
 	// console.log(image);
+	var season = json.data[0]["best season"];
+	// console.log(season);
 
+	//languages
 	var he = language.data.he;
 	var en = language.data.en;
 	console.log(he);
@@ -107,7 +110,8 @@ var language =
 
 	return {
 		flowers:json['data'],
-		image:image,
+		// image:image,
+		// season:season,
 		he:he,
 		en:en
 /*		season:json['data'].['best season']
