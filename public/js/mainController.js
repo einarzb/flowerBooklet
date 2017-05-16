@@ -2,29 +2,28 @@ app.controller('mainController', function($scope, factory, $state) {
 $scope.flowers = factory.flowers;
 $scope.nameSearch;
 
-
-$scope.link = function(flower){
-/*
-console.log(flower)
-console.log(flower["image link"]);
-*/
-return flower["image link"];
-
+/*-------------------------------------------------------
+                  get flowers data
+--------------------------------------------------------*/
+$scope.getImage = function(flower){
+  return flower["image link"];
 }
 
 $scope.getSeason = function(flower){
-  console.log(flower);
-  console.log(flower["best season"]);
   return flower["best season"];
 }
 
-// $scope.he = function(he) {
-//   alert("yoyoyoy");
-// }
-//
-// $scope.en = function(en) {
-//   alert("mememe");
-// }
+/*-------------------------------------------------------
+                  languages switch
+--------------------------------------------------------*/
+
+$scope.he = function(he) {
+  alert("yoyoyoy");
+}
+
+$scope.en = function(en) {
+  alert("mememe");
+}
 
 
 // $scope.filterName = function(nameSearch){

@@ -2,8 +2,6 @@ app.factory('factory', function($http){
 
 //initialize
 var flowers = [];
-// var image = json.data[0]["image link"];
-// var season = json.data[0]["best season"];
 
 //flowers json
 	var json =
@@ -38,6 +36,9 @@ var flowers = [];
   ]
 }
 
+// var image = json.data[0]["image link"];
+// var season = json.data[0]["best season"];
+
 //languages json
 var language =
 {
@@ -51,26 +52,35 @@ var language =
     "he": {
       "hello": "שלום",
       "welcome": "ברוכים הבאים",
-      "flower guide": "מדריך פרחים",
-      "summer": "קיץ",
-      "winter": "חורף",
-      "fall": "סתיו",
-      "spring": "אביב",
-      "blossom season": "blossom season",
-      "rose": "ורדז",
-      "Calla lily": "לילך",
-      "sunset safari": "לויקודנדרון",
-      "hypericum": "פרע",
-      "orchid Phalaenopsis": "סחלב"
+      "flower guide": "מדריך פרחים"
     }
   }
 }
 
+var heFlowerName = {
+	"blossom season": "blossom season",
+	"rose": "ורדז",
+	"Calla lily": "לילך",
+	"sunset safari": "לויקודנדרון",
+	"hypericum": "פרע",
+	"orchid Phalaenopsis": "סחלב"
+}
+
+console.log(heFlowerName);
+
+var heSeasonName = {
+	"summer": "קיץ",
+	"winter": "חורף",
+	"fall": "סתיו",
+	"spring": "אביב"
+}
+console.log(heSeasonName);
+
 //languages
 var he = language.data.he;
 var en = language.data.en;
-console.log(he);
-console.log(en);
+// console.log(he);
+// console.log(en);
 
 	return {
 		flowers:json['data'],
