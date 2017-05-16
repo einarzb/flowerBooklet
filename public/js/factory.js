@@ -1,17 +1,11 @@
 app.factory('factory', function($http){
 
+//initialize
+var flowers = [];
+// var image = json.data[0]["image link"];
+// var season = json.data[0]["best season"];
 
-	/*var flowers = [{
-      name: "rose",
-      season: "fall",
-      image:"http://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/images/photo_9705.jpg?itok=44DBZcZV"
-	},
-	{
-	  name: "Calla lily",
-      season: "summer",
-      image: "https://www.gardenia.net/rendition.slider_detail/uploads/plant/1429882990-890258a76fbc11f3a/41305.jpg"
-	}];*/
-
+//flowers json
 	var json =
 	{
   "success": true,
@@ -34,7 +28,7 @@ app.factory('factory', function($http){
     {
       "name": "hypericum",
       "best season": "winter",
-      "image link": "http://chrysalflowerfood.com/blog/wp-content/uploads/2014/04/Hot-Pink-Bouquet-Filled-with-Callas-Gomphrena-Hot-Pink-Princess-Roses-and-Bright-Green-Hypericum-Berries-The-French-Bouquet-James-Walton-Photo.jpg"
+      "image link": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Hypericum_calycinum_Tasmania.jpg"
     },
     {
       "name": "orchid Phalaenopsis",
@@ -44,6 +38,7 @@ app.factory('factory', function($http){
   ]
 }
 
+//languages json
 var language =
 {
   "success": true,
@@ -71,42 +66,11 @@ var language =
   }
 }
 
-	var flowers = [];
-	var image = json.data[0]["image link"];
-	// console.log(image);
-	var season = json.data[0]["best season"];
-	// console.log(season);
-
-	//languages
-	var he = language.data.he;
-	var en = language.data.en;
-	console.log(he);
-	console.log(en);
-
-	/*var season = json['data'].['best season'];
-	console.log(season)
-*/
-
-	/*var jsonToArr = function(json){
-		var keys = Object.keys(json.data);
-		console.log(keys);
-		keys.forEach(function(key){
-			flowers.push(json[key])
-		});
-		return flowers;
-	}*/
-
-/*	jsonToArr(json);
-*/	/*var rose = {};
-
-	var getFlowers = function () {
-		rose = JSON.parse('{name:"rose", best season:"fall", "image link": "http://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/images/photo_9705.jpg?itok=44DBZcZV"}')
-		console.log(rose.name)
-		flowers.push(rose);
-		console.log(flowers);
-	}
-
-	getFlowers();*/
+//languages
+var he = language.data.he;
+var en = language.data.en;
+console.log(he);
+console.log(en);
 
 	return {
 		flowers:json['data'],
@@ -114,11 +78,5 @@ var language =
 		// season:season,
 		he:he,
 		en:en
-/*		season:json['data'].['best season']
-*/		/*jsonToArr:jsonToArr
-		rose:rose,
-		getFlowers:getFlowers*/
 	}
-
-
 });
