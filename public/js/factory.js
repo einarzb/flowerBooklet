@@ -40,45 +40,54 @@ var flowers = [];
 // var season = json.data[0]["best season"];
 
 //languages json
-var language =
+var translation =
 {
   "success": true,
   "data": {
     "en": {
       "hello": "hello",
       "welcome": "welcome",
-      "flower guide": "flower guide"
+      "flower guide": "flower guide",
+			"blossom season": "blossom season",
+			"summer": "summer",
+			"winter": "winter",
+			"fall": "fall",
+			"spring": "spring",
+			"rose": "rose",
+			"Calla lily": "Calla lily",
+			"sunset safari": "sunset safari",
+			"hypericum": "hypericum",
+			"orchid Phalaenopsis": "orchid Phalaenopsis"
     },
+
     "he": {
       "hello": "שלום",
       "welcome": "ברוכים הבאים",
-      "flower guide": "מדריך פרחים"
-    },
-		"heSeason": {
+      "flower guide": "מדריך פרחים",
+			"blossom season": "עונת הפריחה",
 			"summer": "קיץ",
 			"winter": "חורף",
 			"fall": "סתיו",
-			"spring": "אביב"
-		},
-		"heFlower": {
-			"blossom season": "blossom season",
-			"rose": "ורדז",
+			"spring": "אביב",
+			"rose": "ורד",
 			"Calla lily": "לילך",
 			"sunset safari": "לויקודנדרון",
 			"hypericum": "פרע",
 			"orchid Phalaenopsis": "סחלב"
 		}
+		}
   }
-}
+
 //languages
-var heSeason = language.data.heSeason;
-var heFlower = language.data.heFlower;
+var heSeason = translation.data.heSeason;
+var heFlower = translation.data.heFlower;
 console.log(heFlower);
-var en = language.data.en;
+var en = translation.data.en;
 // console.log(he);
 // console.log(en);
 
 	return {
 		flowers:json['data']
 	}
+				
 });
